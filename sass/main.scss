@@ -1,0 +1,76 @@
+// Imports the Ubuntu typeface from Google.
+@import '_fonts.scss';
+
+// Imports the variables that define the visual behavior of this menu.
+@import '_variables.scss';
+
+// Imports the presentational CSS of this page that has nothing to do with the
+// function of this menu.
+@import '_base';
+
+nav {
+   width: $width-nav;
+   height: $height-nav-item;
+   padding-bottom: 12px;
+
+   a {
+      display: block;
+      border: $width-border solid $color-border;
+
+      // Subtract the width of the right and left borders from the overall width of
+      // the nav item.
+      width: $width-nav-item - ( 2 * $width-border );
+
+      // Ensure that the entire height of nav item is consumed by the line-height
+      // of this item. Otherwise, vertical gaps will exist between this item and
+      // its parent, the nav element.
+     line-height: $height-nav-item;
+   }
+
+   a:hover {
+      background-color: $color-border;
+   }
+
+   ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+
+      > li {
+         // Float each top-level list item (“Menu 1” and “Menu 2”) next to each
+         // other.
+         float: left;
+         width: $width-nav-item;
+
+         // Because the inner unordered lists must absolutely bind positionally to
+         // these list items, I must set the position property here to relative.
+         position: relative;
+         background-color: $color-background-nav;
+
+         ul {
+            // Hide these nested unordered lists by default, showing them only when
+            // a user hovers over its parent. (See line 71 in this file.)
+            visibility: hidden;
+            position: absolute;
+            top: $height-nav-item + ( 2 * $width-border );
+            left: 0;
+
+            a {
+               // Uncomment both of the following variables, then uncomment and
+               // change the value of $height-inner-list-items in _variables.scss to
+               // modify the height and vertical alignment of each inner nav item.
+               //
+               // line-height: ( $height-inner-list-items );
+               // height: ( $height-inner-list-items );
+            }
+         }
+      }
+
+      // Reveal the hovering over the li shows the descending ul?
+      > li:hover {
+         ul {
+            visibility: visible;
+         }
+      }
+   }
+}

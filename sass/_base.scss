@@ -1,0 +1,28 @@
+body {
+   color: $color-foreground;
+   font-family: 'Ubuntu', sans-serif;
+   margin: 0 auto;
+   width: $width-nav;
+}
+
+nav {
+   margin: 0 auto;
+
+   a {
+      color: $color-nav-links;
+      text-align: center;
+      text-decoration: none;
+   }
+}
+
+pre {
+   font-size: .96em;
+}
+
+span {
+   color: $color-code-sample-link;
+}
+
+h1, h2 {
+   text-align: center;
+}
