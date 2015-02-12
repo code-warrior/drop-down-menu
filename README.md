@@ -4,7 +4,7 @@
 
 This is a simple drop down menu made with Sass (version 3.2.12, Media Mark). It’s thoroughly commented for pedagogical reasons.
 
-— Roy Vanegas (roy@thecodeeducators.com)
+— Roy Vanegas
 
 ## Installation
 1. Compile the Sass document
