@@ -2,7 +2,7 @@
 # Drop Menu
 ![Drop Down Menu screenshot](img/drop-down-menu.png "Drop Down Menu screenshot")
 
-This is a simple drop down menu made with Sass (version 3.2.12, Media Mark). It’s thoroughly commented for pedagogical reasons.
+This is a simple drop down menu made with CSS via Sass (version 3.2.12, Media Mark). CSS isn’t included with this project. You’ll need Sass to compile it. See below.
 
 — Roy Vanegas
 
