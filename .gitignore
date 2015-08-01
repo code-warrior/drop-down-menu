@@ -1,17 +1,63 @@
-########
-# SASS #
-########
-*.scssc
-.sass-cache
-*.map
+################
+# CDT-specific #
+################
+.cproject
+
+###################
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
 
 ###########
-# Windows #
-###########
-# https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# Eclipse #
+#         ##################################################################
+# https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore #
+############################################################################
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+#########
+# Emacs #
+#########
+*.*~
+
+##########################
+# External tool builders #
+##########################
+.externalToolBuilders/
+
+######################
+# Folder config file #
+######################
+Desktop.ini
+
+##################################################
+# Locally stored “Eclipse launch configurations” #
+##################################################
+*.launch
+
+######################
+# Logs and databases #
+######################
+*.log
+*.sqlite
 
 ######################
 # OS generated files #
@@ -21,24 +67,80 @@ ehthumbs.db
 ._*
 .Spotlight-V100
 .Trashes
+ehthumbs.db
+Thumbs.db
+
+############
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+################
+# PDT-specific #
+################
+.buildpath
 
 ####################################
 # PHPStorm, IntelliJ, and WebStorm #
 ####################################
 .idea/
 
-###############
-# SublimeText #
-###############
-# https://github.com/github/gitignore/blob/master/Global/SublimeText.gitignore
-# SublimeText project files
-*.sublime-workspace
-
-# Folder config file
-Desktop.ini
-desktoop.ini
-
-# Recycle Bin used on file shares
+###################################
+# Recycle Bin used on file shares #
+###################################
 $RECYCLE.BIN/
 
-*.*~
+########
+# SASS #
+########
+*.scssc
+*.map
+.sass-cache
+
+###############
+# SublimeText #
+#             ###############
+# SublimeText project files ####################################################
+# https://github.com/github/gitignore/blob/master/Global/SublimeText.gitignore #
+################################################################################
+*.sublime-workspace
+
+############
+# TextMate #
+#          ##################################################################
+# https://github.com/github/gitignore/blob/master/Global/TextMate.gitignore #
+#############################################################################
+*.tmproj
+*.tmproject
+tmtags
+
+#######
+# vim #
+#     ##################################################################
+# https://github.com/github/gitignore/blob/master/Global/vim.gitignore #
+########################################################################
+*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+###########
+# Windows #
+#         ###################
+# Windows image file caches ################################################
+# https://github.com/github/gitignore/blob/master/Global/Windows.gitignore #
+############################################################################
+Thumbs.db
+ehthumbs.db
+
+##########################################
+# Add your repo-specific overrides below #
+##########################################
