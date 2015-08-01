@@ -1,11 +1,14 @@
-<meta charset="utf-8">
 # Drop Menu
 
 v0.1.0
 
-![Drop Down Menu screenshot](img/drop-down-menu.png "Drop Down Menu screenshot")
+![Drop Down Menu screenshot — Before](img/drop-down-before.png "Drop Down Menu screenshot — Before")
 
-This is a simple drop down menu made with CSS via Sass (version 3.2.12, Media Mark). CSS isn’t included with this project. You’ll need Sass to compile it. See below.
+![Drop Down Menu screenshot — Menu 1 drop down](img/drop-down-menu-1.png "Drop Down Menu screenshot — Menu 1 drop down")
+
+![Drop Down Menu screenshot — Menu 2 drop down](img/drop-down-menu-2.png "Drop Down Menu screenshot — Menu 2 drop down")
+
+This is a simple drop down menu made with CSS via Sass (version 3.2.12, Media Mark). The Sass-compiled CSS is included, but the logic of how this project is built is explained in the Sass files.
 
 — Roy Vanegas
 
