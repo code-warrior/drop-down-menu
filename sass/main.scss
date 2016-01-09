@@ -41,8 +41,8 @@ nav {
          float: left;
          width: $width-nav-item;
 
-         // Because the inner unordered lists must absolutely bind positionally to
-         // these list items, I must set the position property here to relative.
+         // Because I need the inner unordered list to positionally bind absolutely
+         // to this list item, I must set the position property here to relative.
          position: relative;
          background-color: $color-background-nav;
 
@@ -50,6 +50,11 @@ nav {
             // Hide these nested unordered lists by default, showing them only when
             // a user hovers over its parent. (See line 71 in this file.)
             visibility: hidden;
+
+            // By setting this list’s position property to absolute, I allow content
+            // to appear underneath the first list, not this one. In doing so, when
+            // the user hovers her/his mouse over the primary list items, the
+            // secondary nav appears *on top* of the content.
             position: absolute;
             top: $height-nav-item + ( 2 * $width-border );
             left: 0;
