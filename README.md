@@ -1,6 +1,6 @@
 # Drop Down Menu
 
-v0.4.0
+v0.5.0
 
 ![Drop Down Menu screenshot — Before](img/drop-down-before.png "Drop Down Menu screenshot — Before")
 
