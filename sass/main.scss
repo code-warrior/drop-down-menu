@@ -46,6 +46,13 @@ nav {
          position: relative;
          background-color: $color-background-nav;
 
+         &:hover {
+            ul {
+               visibility: visible;
+            }
+         }
+
+
          ul {
             // Hide these nested unordered lists by default, showing them only when
             // a user hovers over its parent. (See line 71 in this file.)
@@ -67,12 +74,6 @@ nav {
                // line-height: ( $height-inner-list-items );
                // height: ( $height-inner-list-items );
             }
-         }
-      }
-
-      > li:hover {
-         ul {
-            visibility: visible;
          }
       }
    }
