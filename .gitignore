@@ -146,4 +146,4 @@ ehthumbs.db
 ##########################################
 
 # Ignore the CSS folder, since it can always be rebuilt with Sass.
-css/
+/css
