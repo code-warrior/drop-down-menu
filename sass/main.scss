@@ -47,6 +47,8 @@ nav {
          background-color: $color-background-nav;
 
          &:hover {
+            background-color: $color-border;
+
             ul {
                visibility: visible;
             }
