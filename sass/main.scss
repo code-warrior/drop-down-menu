@@ -23,11 +23,11 @@ nav {
       // Ensure that the entire height of nav item is consumed by the line-height
       // of this item. Otherwise, vertical gaps will exist between this item and
       // its parent, the nav element.
-   }
       line-height: $height-nav-item;
 
-   a:hover {
-      background-color: $color-border;
+      &:hover {
+         background-color: $color-border;
+      }
    }
 
    ul {
