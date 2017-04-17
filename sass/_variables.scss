@@ -1,6 +1,7 @@
 // Change this variable to adjust the overall width of both the menu and the body.
-$width-nav:      300px;
-$width-nav-item: ($width-nav / 2);
+$sub-nav-count:  2;
+$width-nav-item: 150px;
+$width-nav:      $width-nav-item * $sub-nav-count;
 
 // This variable defines the uniform height of each nav item.
 $height-nav-item: 48px;
