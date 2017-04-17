@@ -42,12 +42,12 @@ nav {
 
          // Hovering over the top-level <li> element makes visible the nested <ul> element.
          &:hover {
-            ul {
+            > ul {
                visibility: visible;
             }
          }
 
-         ul {
+         > ul {
             // Hide these nested unordered lists by default, showing them only when
             // a user hovers over its parent.
             visibility: hidden;
