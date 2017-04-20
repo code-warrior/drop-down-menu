@@ -12,6 +12,4 @@ This is a simple drop down menu made with CSS via Sass (version 3.2.12, Media Ma
 
 ## Compiling The CSS
 
-1. Compile the CSS document
-
         sass --unix-newlines --style expanded sass/main.scss:css/main.css
