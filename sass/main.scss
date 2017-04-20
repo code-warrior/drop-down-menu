@@ -44,12 +44,13 @@ nav {
          float: left;
          width: $width-nav-item;
 
-         // Because I need the inner unordered list to positionally bind absolutely
+         // Because I need the inner <ul> to positionally bind absolutely
          // to this list item, I must set the position property here to relative.
          position: relative;
          background-color: $color-background-nav;
 
-         // Hovering over the top-level <li> element makes visible the nested <ul> element.
+         // Hovering over the top-level <li> element makes visible the nested <ul>
+         // element.
          &:hover {
             > ul {
                visibility: visible;
@@ -65,6 +66,10 @@ nav {
             // to appear underneath the first list, not this one. In doing so, when
             // the user hovers her/his mouse over the primary list items, the
             // secondary nav appears *on top* of the content.
+            //
+            // Further, absolute breaks the flow.
+            //
+            // Note: The offset property “top” does not need to be defined, since the anchor point for top is derived from its location in the DOM.
             position: absolute;
             top: $height-nav-item;
             left: 0;
