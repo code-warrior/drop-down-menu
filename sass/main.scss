@@ -1,4 +1,4 @@
-// Imports the Ubuntu typeface from Google.
+// Imports the Open Sans typeface from Google.
 @import '_fonts.scss';
 
 // Imports the variables that define the visual behavior of this menu.
@@ -10,23 +10,28 @@
 
 nav {
    width: $width-nav;
+
+   // The height of the <nav> must equal the height of the block-level <a> element so
+   // content following the <nav> element in the DOM starts rendering underneath
+   // the <nav> element. The floated <li> elements cause the wrapping issue here.
+   // Thus the need for the $height-nav-item variable.
    height: $height-nav-item;
 
    a {
       display: block;
-      border: $width-border solid $color-border;
+      width: $width-nav-item;
 
-      // Subtract the width of the right and left borders from the overall width of
-      // the nav item.
-      width: $width-nav-item - ( 2 * $width-border );
-
-      // Ensure that the entire height of nav item is consumed by the line-height
-      // of this item. Otherwise, vertical gaps will exist between this item and
-      // its parent, the nav element.
+      // In order to vertically align the content in this <a> element, use a value
+      // for leading (line-height) equal to the height of the <nav> element.
+      // Otherwise, vertical gaps will exist between this item and its parent, the
+      // <nav> element.
+      //
+      // Note: If content in this <a> element were to wrap along two lines, the
+      //       rendering would be awkward, because of the exagerrated leading.
       line-height: $height-nav-item;
 
       &:hover {
-         background-color: $color-border;
+         background-color: lighten($color--main-bg, 40%);
       }
    }
 
@@ -36,44 +41,40 @@ nav {
       list-style-type: none;
 
       > li {
-         // Float each top-level list item (“Menu 1” and “Menu 2”) next to each
-         // other.
          float: left;
          width: $width-nav-item;
 
-         // Because I need the inner unordered list to positionally bind absolutely
-         // to this list item, I must set the position property here to relative.
+         // Because I need the inner <ul> to positionally bind absolutely
+         // to this <li> element, I must set the position property here to relative.
          position: relative;
          background-color: $color-background-nav;
 
+         // Hovering over the top-level <li> element makes visible the nested <ul>
+         // element.
          &:hover {
-            background-color: $color-border;
-
-            ul {
+            > ul {
                visibility: visible;
             }
          }
 
-         ul {
+         > ul {
             // Hide these nested unordered lists by default, showing them only when
-            // a user hovers over its parent. (See line 71 in this file.)
+            // a user hovers over its parent.
             visibility: hidden;
 
             // By setting this list’s position property to absolute, I allow content
             // to appear underneath the first list, not this one. In doing so, when
-            // the user hovers her/his mouse over the primary list items, the
-            // secondary nav appears *on top* of the content.
+            // the user hovers her/his mouse over the primary <li> elements, the
+            // inner <ul> appears *on top* of the content.
+            //
+            // Note: The offset property “top” does not need to be defined, since
+            // the anchor point for top is derived from its location in the DOM.
             position: absolute;
-            top: $height-nav-item + ( 2 * $width-border );
             left: 0;
 
             a {
-               // Uncomment both of the following variables, then uncomment and
-               // change the value of $height-inner-list-items in _variables.scss to
-               // modify the height and vertical alignment of each inner nav item.
-               //
-               // line-height: ( $height-inner-list-items );
-               // height: ( $height-inner-list-items );
+               line-height: $height-inner-list-items;
+               height: $height-inner-list-items;
             }
          }
       }

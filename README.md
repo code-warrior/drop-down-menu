@@ -1,6 +1,6 @@
 # Drop Down Menu
 
-v0.5.0
+v1.0.0
 
 ![Drop Down Menu screenshot — Before](img/drop-down-before.png "Drop Down Menu screenshot — Before")
 
@@ -8,7 +8,7 @@ v0.5.0
 
 ![Drop Down Menu screenshot — Menu 2 drop down](img/drop-down-menu-2.png "Drop Down Menu screenshot — Menu 2 drop down")
 
-This is a simple drop down menu made with CSS via Sass (version 3.2.12, Media Mark). The Sass-compiled CSS is included, but the logic of how this project is built is explained in the Sass files.
+This is a simple drop down menu made with CSS via Sass (version 3.2.12, Media Mark). Comments on how the CSS is used to build the menu are in the file `main.scss`.
 
 — Roy Vanegas
 
@@ -17,5 +17,3 @@ This is a simple drop down menu made with CSS via Sass (version 3.2.12, Media Ma
 1. Compile the CSS document
 
         sass --unix-newlines --style expanded sass/main.scss:css/main.css
-
-2. Double-click `index.html`
