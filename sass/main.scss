@@ -71,7 +71,6 @@ nav {
             //
             // Note: The offset property “top” does not need to be defined, since the anchor point for top is derived from its location in the DOM.
             position: absolute;
-            top: $height-nav-item;
             left: 0;
 
             a {
