@@ -10,6 +10,11 @@
 
 nav {
    width: $width-nav;
+
+   // The height of the <nav> must equal the height of the block-level <a> element so
+   // content following the <nav> element in the DOM starts rendering underneath
+   // the <nav> element. The floated <li> elements cause the wrapping issue here.
+   // Thus the need for the $height-nav-item variable.
    height: $height-nav-item;
 
    a {
