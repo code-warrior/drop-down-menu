@@ -10,9 +10,7 @@ v1.0.0
 
 This is a simple drop down menu made with CSS via Sass (version 3.2.12, Media Mark). Comments on how the CSS is used to build the menu are in the file `main.scss`.
 
-— Roy Vanegas
-
-## Re-Compiling The CSS
+## Compiling The CSS
 
 1. Compile the CSS document
 
