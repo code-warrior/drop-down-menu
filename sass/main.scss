@@ -21,9 +21,13 @@ nav {
       display: block;
       width: $width-nav-item;
 
-      // Ensure that the entire height of nav item is consumed by the line-height
-      // of this item. Otherwise, vertical gaps will exist between this item and
-      // its parent, the nav element.
+      // In order to vertically align the content in this <a> element, use a value
+      // for leading (line-height) equal to the height of the <nav> element.
+      // Otherwise, vertical gaps will exist between this item and its parent, the
+      // <nav> element.
+      //
+      // Note: If content in this <a> element were to wrap along two lines, the
+      //       rendering would be awkward, because of the exagerrated leading.
       line-height: $height-nav-item;
 
       &:hover {
