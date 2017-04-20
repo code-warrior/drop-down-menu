@@ -45,7 +45,7 @@ nav {
          width: $width-nav-item;
 
          // Because I need the inner <ul> to positionally bind absolutely
-         // to this list item, I must set the position property here to relative.
+         // to this <li> element, I must set the position property here to relative.
          position: relative;
          background-color: $color-background-nav;
 
@@ -64,19 +64,15 @@ nav {
 
             // By setting this list’s position property to absolute, I allow content
             // to appear underneath the first list, not this one. In doing so, when
-            // the user hovers her/his mouse over the primary list items, the
-            // secondary nav appears *on top* of the content.
+            // the user hovers her/his mouse over the primary <li> elements, the
+            // inner <ul> appears *on top* of the content.
             //
-            // Further, absolute breaks the flow.
-            //
-            // Note: The offset property “top” does not need to be defined, since the anchor point for top is derived from its location in the DOM.
+            // Note: The offset property “top” does not need to be defined, since
+            // the anchor point for top is derived from its location in the DOM.
             position: absolute;
             left: 0;
 
             a {
-               // Uncomment both of the following variables, then uncomment and
-               // change the value of $height-inner-list-items in _variables.scss to
-               // modify the height and vertical alignment of each inner nav item.
                line-height: $height-inner-list-items;
                height: $height-inner-list-items;
             }
