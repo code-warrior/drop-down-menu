@@ -1,12 +1,12 @@
 // Imports the Open Sans typeface from Google.
-@import '_fonts.scss';
+@import 'fonts';
 
 // Imports the variables that define the visual behavior of this menu.
-@import '_variables.scss';
+@import 'variables';
 
 // Imports the presentational CSS of this page that has nothing to do with the
 // function of this menu.
-@import '_base';
+@import 'base';
 
 nav {
    width: $width-nav;
