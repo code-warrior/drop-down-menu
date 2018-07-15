@@ -1,33 +1,14 @@
-// Imports the Open Sans typeface from Google.
 @import 'fonts';
-
-// Imports the variables that define the visual behavior of this menu.
 @import 'variables';
-
-// Imports the presentational CSS of this page that has nothing to do with the
-// function of this menu.
 @import 'base';
 
 nav {
    width: $width-nav;
-
-   // The height of the <nav> must equal the height of the block-level <a> element so
-   // content following the <nav> element in the DOM starts rendering underneath
-   // the <nav> element. The floated <li> elements cause the wrapping issue here.
-   // Thus the need for the $height-nav-item variable.
    height: $height-nav-item;
 
    a {
       display: block;
       width: $width-nav-item;
-
-      // In order to vertically align the content in this <a> element, use a value
-      // for leading (line-height) equal to the height of the <nav> element.
-      // Otherwise, vertical gaps will exist between this item and its parent, the
-      // <nav> element.
-      //
-      // Note: If content in this <a> element were to wrap along two lines, the
-      //       rendering would be awkward, because of the exagerrated leading.
       line-height: $height-nav-item;
 
       &:hover {
@@ -43,14 +24,9 @@ nav {
       > li {
          float: left;
          width: $width-nav-item;
-
-         // Because I need the inner <ul> to positionally bind absolutely
-         // to this <li> element, I must set the position property here to relative.
          position: relative;
          background-color: $color-background-nav;
 
-         // Hovering over the top-level <li> element makes visible the nested <ul>
-         // element.
          &:hover {
             > ul {
                visibility: visible;
@@ -58,17 +34,7 @@ nav {
          }
 
          > ul {
-            // Hide these nested unordered lists by default, showing them only when
-            // a user hovers over its parent.
             visibility: hidden;
-
-            // By setting this list’s position property to absolute, I allow content
-            // to appear underneath the first list, not this one. In doing so, when
-            // the user hovers her/his mouse over the primary <li> elements, the
-            // inner <ul> appears *on top* of the content.
-            //
-            // Note: The offset property “top” does not need to be defined, since
-            // the anchor point for top is derived from its location in the DOM.
             position: absolute;
             left: 0;
 
