@@ -17,13 +17,14 @@ nav {
    }
 
    > ul {
+      display: flex;
       margin: 0;
       padding: 0;
       list-style-type: none;
 
       > li {
          position: relative;
-         float: left;
+         flex-grow: 1;
          margin: 0;
          background-color: $color-background-nav;
          width: $width-nav-item;
