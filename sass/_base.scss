@@ -19,3 +19,14 @@ nav {
 h1 {
    text-align: center;
 }
+
+ul {
+   margin: 0;
+   background-color: $color-background-nav;
+   list-style-type: none;
+
+   li {
+      /// Cancel out the default 40px left margin on <li> elements.
+      margin-left: -40px;
+   }
+}
