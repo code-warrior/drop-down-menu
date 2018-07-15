@@ -3,6 +3,9 @@
 @import 'base';
 
 nav {
+   position: sticky;
+   top: 0;
+
    width: $width-nav;
    height: $height-nav-item;
 
