@@ -12,7 +12,7 @@ $width-nav:      $width-nav-item * $sub-nav-count;
 $height-nav-item: 48px;
 
 // Increase 0 to uniformly change the height of each inner nav item.
-$height-inner-list-items: ($height-nav-item + 0px);
+$height-inner-list-items: ($height-nav-item + 0);
 
 $color-nav-links:        #000;
 $color-code-sample-link: #7d4793;
