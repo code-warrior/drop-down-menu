@@ -17,15 +17,15 @@ nav {
    }
 
    ul {
-      padding: 0;
       margin: 0;
+      padding: 0;
       list-style-type: none;
 
       > li {
-         float: left;
-         width: $width-nav-item;
          position: relative;
+         float: left;
          background-color: $color-background-nav;
+         width: $width-nav-item;
 
          &:hover {
             > ul {
@@ -34,13 +34,13 @@ nav {
          }
 
          > ul {
-            visibility: hidden;
             position: absolute;
             left: 0;
+            visibility: hidden;
 
             a {
-               line-height: $height-inner-list-items;
                height: $height-inner-list-items;
+               line-height: $height-inner-list-items;
             }
          }
       }
