@@ -11,7 +11,8 @@ nav {
       width: $width-nav-item;
       line-height: $height-nav-item;
 
-      &:hover {
+      &:hover,
+	  &:focus  {
          background-color: lighten($color--main-bg, 40%);
       }
    }
@@ -29,16 +30,20 @@ nav {
          background-color: $color-background-nav;
          width: $width-nav-item;
 
-         &:hover {
+         &:hover,
+		 &:focus,
+		 &:focus-within  {
             > ul {
-               visibility: visible;
+               opacity: 1;
+			   height: auto;
             }
          }
 
          > ul {
             position: absolute;
             left: 0;
-            visibility: hidden;
+            opacity: 0;
+			height: 1px;
 
             a {
                height: $height-inner-list-items;
