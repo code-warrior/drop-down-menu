@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
+body {
+  background-color: #21bde1;
+  color: #555;
+  font-family: "Open Sans", sans-serif;
+  height: 3000px;
+}
+
+nav {
+  margin: 0 auto;
+}
+nav a {
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  background-color: #fff;
+  list-style-type: none;
+}
+ul li {
+  margin-left: -40px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 300px;
+  height: 48px;
+}
+nav a {
+  display: block;
+  width: 150px;
+  line-height: 48px;
+}
+nav a:hover {
+  background-color: #d5f2f9;
+}
+nav > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav > ul > li {
+  position: relative;
+  flex-grow: 1;
+  margin: 0;
+  background-color: #fff;
+  width: 150px;
+}
+nav > ul > li:hover > ul {
+  visibility: visible;
+}
+nav > ul > li > ul {
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+nav > ul > li > ul a {
+  height: 48px;
+  line-height: 48px;
+}
+
+/*# sourceMappingURL=main.css.map */
