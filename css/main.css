@@ -1,0 +1,66 @@
+@import url('variables.css');
+
+body {
+  background-color: var(--color--main-bg);
+  color: var(--color--foreground);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  display: block;
+  width: var(--width--nav-item);
+  text-align: center;
+  text-decoration: none;
+  color: var(--color--nav-links);
+  line-height: var(--height--nav-item);
+}
+
+a:hover {
+  background-color: var(--color--link-hover);
+}
+
+nav {
+  margin: auto;
+  width: var(--width--nav);
+  height: var(--height--nav-item);
+}
+
+nav ul {
+  background-color: var(--color--nav-bg);
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: -40px;
+}
+
+nav > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  position: relative;
+  margin: 0;
+  width: var(--width--nav-item);
+}
+
+nav > ul > li:hover > ul {
+  visibility: visible;
+}
+
+nav > ul > li > ul {
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+
+nav > ul > li > ul a {
+  height: var(--height--nav-item);
+  line-height: var(--height--nav-item);
+}
