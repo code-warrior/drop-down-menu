@@ -1,0 +1,12 @@
+:root {
+  --sub-nav-count:     2; /* Increase this value for every new top-level list. For example, increase to 3 if you add one more top-level list. */
+  --width--nav-item:   150px;
+  --width--nav:        calc(var(--width--nav-item) * var(--sub-nav-count));
+  --height--nav-item:  48px;
+  --height--inner-li:  calc(var(--height--nav-item) + 0); /* Increase 0 to uniformly change the height of each inner nav item. */
+  --color--nav-links:  #000;
+  --color--main-bg:    #21bde1;
+  --color--link-hover: #d5f2f9;
+  --color--foreground: #555;
+  --color--nav-bg:     #fff;
+}
