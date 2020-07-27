@@ -30,7 +30,7 @@ nav {
 }
 
 nav ul {
-  background-color: var(--color--nav-bg);
+  background-color: var(--color--bg--nav);
   list-style-type: none;
 }
 
