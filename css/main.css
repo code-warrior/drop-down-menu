@@ -59,8 +59,3 @@ nav > ul > li > ul {
   left: 0;
   visibility: hidden;
 }
-
-nav > ul > li > ul a {
-  height: var(--height--nav-item);
-  line-height: var(--height--nav-item);
-}
