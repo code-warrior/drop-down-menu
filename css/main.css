@@ -1,7 +1,7 @@
 @import url('variables.css');
 
 body {
-  background-color: var(--color--main-bg);
+  background-color: var(--color--bg--main);
   color: var(--color--foreground);
   font-family: "Open Sans", sans-serif;
 }
