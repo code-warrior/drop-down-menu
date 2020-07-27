@@ -20,7 +20,7 @@ a {
 }
 
 a:hover {
-  background-color: var(--color--link-hover);
+  background-color: var(--color--bg--link-hover);
 }
 
 nav {

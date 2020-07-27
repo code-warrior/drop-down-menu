@@ -6,7 +6,7 @@
   --height--inner-li:  calc(var(--height--nav-item) + 0); /* Increase 0 to uniformly change the height of each inner nav item. */
   --color--nav-links:  #000;
   --color--main-bg:    #21bde1;
-  --color--link-hover: #d5f2f9;
+  --color--bg--link-hover: #d5f2f9;
   --color--foreground: #555;
   --color--nav-bg:     #fff;
 }
