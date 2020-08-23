@@ -12,7 +12,7 @@ nav {
     line-height: $height-nav-item;
 
     &:hover {
-      background-color: lighten($color--main-bg, 40%);
+      background-color: lighten($color--bg--main, 40%);
     }
   }
 
