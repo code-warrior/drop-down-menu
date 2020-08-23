@@ -3,48 +3,48 @@
 @import 'base';
 
 nav {
-   width: $width-nav;
-   height: $height-nav-item;
+  width: $width-nav;
+  height: $height-nav-item;
 
-   a {
-      display: block;
+  a {
+    display: block;
+    width: $width-nav-item;
+    line-height: $height-nav-item;
+
+    &:hover {
+      background-color: lighten($color--main-bg, 40%);
+    }
+  }
+
+  > ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    > li {
+      position: relative;
+      flex-grow: 1;
+      margin: 0;
+      background-color: $color-background-nav;
       width: $width-nav-item;
-      line-height: $height-nav-item;
 
       &:hover {
-         background-color: lighten($color--main-bg, 40%);
+        > ul {
+          visibility: visible;
+        }
       }
-   }
 
-   > ul {
-      display: flex;
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
+      > ul {
+        position: absolute;
+        left: 0;
+        visibility: hidden;
 
-      > li {
-         position: relative;
-         flex-grow: 1;
-         margin: 0;
-         background-color: $color-background-nav;
-         width: $width-nav-item;
-
-         &:hover {
-            > ul {
-               visibility: visible;
-            }
-         }
-
-         > ul {
-            position: absolute;
-            left: 0;
-            visibility: hidden;
-
-            a {
-               height: $height-inner-list-items;
-               line-height: $height-inner-list-items;
-            }
-         }
+        a {
+          height: $height-inner-list-items;
+          line-height: $height-inner-list-items;
+        }
       }
-   }
+    }
+  }
 }
