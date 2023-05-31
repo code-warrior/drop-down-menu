@@ -20,7 +20,7 @@ $width--drop-down-menu: ($width--drop-down-menu-item * $drop-down-menu-count);
 /// Heights
 ///
 $height--drop-down-menu-item: 48px; // This variable defines the uniform height of each nav item.
-$height-inner-li: ($height--drop-down-menu-item + 0); // Increase 0 to uniformly change the height of each inner nav item.
+$height--drop-down-menu-item--li: ($height--drop-down-menu-item + 0); // Increase 0 to uniformly change the height of each inner nav item.
 
 ///
 /// Colors
