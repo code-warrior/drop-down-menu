@@ -11,7 +11,7 @@ nav {
     line-height: $height--drop-down-menu-item;
 
     &:hover {
-      background-color: lighten($color--bg--main, 40%);
+      background-color: lighten($background-color--main, 40%);
     }
   }
 
