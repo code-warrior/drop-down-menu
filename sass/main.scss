@@ -7,7 +7,7 @@ nav {
 
   a {
     display: block;
-    width: $width-nav-item;
+    width: $width--drop-down-menu-item;
     line-height: $height-nav-item;
 
     &:hover {
@@ -26,7 +26,7 @@ nav {
       flex-grow: 1;
       margin: 0;
       background-color: $color--bg--nav;
-      width: $width-nav-item;
+      width: $width--drop-down-menu-item;
 
       &:hover {
         > ul {
