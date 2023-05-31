@@ -10,7 +10,7 @@ $drop-down-menu-count: 2;
 /// Widths
 ///
 $width--drop-down-menu-item: 150px;
-$width--drop-down-menu: $width--drop-down-menu-item * $drop-down-menu-count;
+$width--drop-down-menu: ($width--drop-down-menu-item * $drop-down-menu-count);
 
 ///
 /// Heights
