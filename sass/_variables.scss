@@ -3,10 +3,10 @@
 // another top-level nav item to the menu (similar to lines 13 – 19 in
 // index.html) by adding an <li> element with a nested <ul> element to the
 // <nav> element, then update the value to the following variable,
-// $sub-nav-count to 3.
-$sub-nav-count: 2;
+// $drop-down-menu-count to 3.
+$drop-down-menu-count: 2;
 $width-nav-item: 150px;
-$width-nav: $width-nav-item * $sub-nav-count;
+$width-nav: $width-nav-item * $drop-down-menu-count;
 
 // This variable defines the uniform height of each nav item.
 $height-nav-item: 48px;
