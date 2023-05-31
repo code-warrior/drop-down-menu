@@ -3,12 +3,12 @@
 
 nav {
   width: $width--drop-down-menu;
-  height: $height-nav-item;
+  height: $height--drop-down-menu-item;
 
   a {
     display: block;
     width: $width--drop-down-menu-item;
-    line-height: $height-nav-item;
+    line-height: $height--drop-down-menu-item;
 
     &:hover {
       background-color: lighten($color--bg--main, 40%);
