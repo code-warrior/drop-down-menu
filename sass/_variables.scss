@@ -6,7 +6,7 @@
 // $drop-down-menu-count to 3.
 $drop-down-menu-count: 2;
 $width--drop-down-menu-item: 150px;
-$width-nav: $width--drop-down-menu-item * $drop-down-menu-count;
+$width--drop-down-menu: $width--drop-down-menu-item * $drop-down-menu-count;
 
 // This variable defines the uniform height of each nav item.
 $height-nav-item: 48px;
